@@ -12,3 +12,7 @@
   + 插入排序(Insertion Sort)复杂度O(n^2)
   > 找到合适的位置然后插入
   ![插入排序](./static/insertion-sort.png)
+
+  + 改进的插入排序(取消了交换操作)
+  > 将当前位置的元素先拿出 然后逐个与之前的元素比较 如果小于 就将之前的元素后移 在与前一位比较
+  ![插入排序改进](./static/insertion-sort-advanced.png)
