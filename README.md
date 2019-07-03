@@ -4,23 +4,40 @@
 
 ### 首先是最经典的排序问题
 
-+ 排序
-  + 选择排序(Selection Sort)复杂度O(n^2)
-  > 找到最小的元素然后与当前位置交换
-  ![选择排序](./static/selection-sort.png)
-  
-  + 插入排序(Insertion Sort)复杂度O(n^2)
-  > 找到合适的位置然后插入
-  ![插入排序](./static/insertion-sort.png)
+- 排序
 
-  + 改进的插入排序(取消了交换操作)
-  > 将当前位置的元素先拿出 然后逐个与之前的元素比较 如果小于 就将之前的元素后移 在与前一位比较
-  ![插入排序改进](./static/insertion-sort-advanced.png)
+  - 选择排序(Selection Sort)复杂度 O(n^2)
 
-  + 冒泡排序(Bubble Sort)
-  + 希尔排序(Shell Sort)
-  + 归并排序(Merge Sort)复杂度O(n*logn)
-  > 先不断的二分
-  ![归并排序](./static/merge-sort.png)
-  > 归并过程
-  ![归并排序](./static/merge-sort-detail.png)
+    > 找到最小的元素然后与当前位置交换
+    > ![选择排序](./static/selection-sort.png)
+
+  - 插入排序(Insertion Sort)复杂度 O(n^2)
+
+    > 找到合适的位置然后插入
+    > ![插入排序](./static/insertion-sort.png)
+
+  - 改进的插入排序(取消了交换操作)
+
+    > 将当前位置的元素先拿出 然后逐个与之前的元素比较 如果小于 就将之前的元素后移 在与前一位比较
+    > ![插入排序改进](./static/insertion-sort-advanced.png)
+
+  - 冒泡排序(Bubble Sort)
+  - 希尔排序(Shell Sort)
+  - 归并排序(Merge Sort)复杂度 O(n\*logn)
+    > 先不断的二分
+    > ![归并排序](./static/merge-sort.png)
+    > 归并过程
+    > ![归并排序](./static/merge-sort-detail.png)
+  - 归并排序自底向上版(Merge Sort Buttom Up)
+    > 不先对数组进行二分 直接以 1、2、4 这样大小循环合并直至数组全部合并完成
+  - 快速排序(Quick Sort)
+    > 先选中一个元素 然后找到它应该所在的位置 然后继续递归
+    > ![快速排序](./static/quick-sort.png)
+    - 第一部分 partition
+      > 先选中一个元素 然后找到它应该所在的位置 然后继续递归
+      > ![partition](./static/quick-sort-partition.png)
+      > 如果此时 e > v，那么e直接加入到紫色的数组中  
+      > 如果此时 e < v, 那么直接将e与j所指向的位置交换即可 之后j++
+      > ![partition-1](./static/quick-sort-partition-1.png)
+      > 最后所有元素分类完毕之后 将l与j所在位置的元素交换一下即可
+      > ![partition-2](./static/quick-sort-partition-2.png)
