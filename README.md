@@ -51,10 +51,18 @@
       > ![partition-2](./static/quick-sort-partition-2.png)
 
   - 快速排序存在的两点问题
-    1. 对于近乎有序的数组,快速排序会退化到复杂度O(n^2),此时解决办法就是随机选取一个初始值 然后与第一个需要定位的元素 l 交换 这样操作 快速排序的期望复杂度 EO(Nlogn)
-    2. 对于一个数量庞大但是所有元素都在一个很小区间的数组,快速排序依旧会退化到复杂度O(n^2),因为会导致大量的不平衡数组出现
-      > ![快速排序存在问题](./static/quick-sort-problem.png)
 
-  - 此时 使用双路快排
-    > 主要在partition过程中进行了更加细化的操作
-    ![双路快排](./static/quick-sort-two-way.png)
+    1. 对于近乎有序的数组,快速排序会退化到复杂度 O(n^2),此时解决办法就是随机选取一个初始值 然后与第一个需要定位的元素 l 交换 这样操作 快速排序的期望复杂度 EO(Nlogn)
+    2. 对于一个  数量庞大但是所有元素都在一个很小区间的数组,快速  排序依旧会退化到复杂度 O(n^2),因为会导致大量的不平衡数组出现
+       > ![快速排序存在问题](./static/quick-sort-problem.png)
+
+  - 此时 使用双路快排(hard):scream:
+
+    > 主要在 partition 过程中进行了更加细化的操作
+    > ![双路快排](./static/quick-sort-two-way.png)
+
+  - 三路快排
+    - 这是初始排序的情况  
+    > ![初始情况](./static/quick-sort-3-way.png)
+    - 此时是排序完毕的情况
+    > ![三路排序完成](./static/quick-sort-3-way-finish.png)
