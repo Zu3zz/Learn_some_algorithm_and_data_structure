@@ -66,3 +66,8 @@
     > ![初始情况](./static/quick-sort-3-way.png)
     - 此时是排序完毕的情况
     > ![三路排序完成](./static/quick-sort-3-way-finish.png)
+
+- 堆(优先队列)
+  - 二叉堆
+  > 堆 是一个完全二叉树
+  > ![完全二叉树](./static/complete-bin-tree.png)
