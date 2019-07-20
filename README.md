@@ -71,3 +71,7 @@
   - 二叉堆
   > 堆 是一个完全二叉树
   > ![完全二叉树](./static/complete-bin-tree.png)
+
+- 排序算法总结
+  > ![排序算法总结](./static/sort-solution.png)
+  
