@@ -75,3 +75,10 @@
 - 排序算法总结
   > ![排序算法总结](./static/sort-solution.png)
   
+- 最大索引堆
+  - 基础 添加index用来记录当前索引堆每个元素所在的位置
+  > ![最大索引堆基础](./static/index-max-heap.png)
+  - 优化 添加reverse行用来存储索引对应index中的数
+  > ![最大索引堆优化](./static/index-maxheap-reverse.png)
+  - reverse数组more detail
+  > ![reverse](./static/reverse-detail.png)
