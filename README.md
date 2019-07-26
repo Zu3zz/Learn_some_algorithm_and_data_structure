@@ -82,3 +82,5 @@
   > ![最大索引堆优化](./static/index-maxheap-reverse.png)
   - reverse数组more detail
   > ![reverse](./static/reverse-detail.png)
+  - 二项堆
+  - 斐波那契堆
