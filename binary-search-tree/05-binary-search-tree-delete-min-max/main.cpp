@@ -101,6 +101,26 @@ public:
         q.push(node->right);
     }
   }
+  // 寻找最小的键值
+  Key minimum()
+  {
+    assert(count != 0);
+    Node *minNode = minimum(root);
+    return minNode->key;
+  }
+  // 寻找最大的键值
+  Key maximum()
+  {
+    assert(count != 0);
+    Node *maxNode = maximum(root);
+    return maxNode->key;
+  }
+  // 从二叉树中删除最小值所在的节点
+  void removeMin()
+  {
+    if (root)
+      root = removeMin(root);
+  }
 
 private:
   // 向以node为跟的二叉搜索树
@@ -175,6 +195,8 @@ private:
       cout << node->key << endl;
     }
   }
+  // 释放以node为根的二分搜索树的所有节点
+  // 采用后续遍历的递归算法
   void destroy(Node *node)
   {
     if (node != NULL)
@@ -184,6 +206,50 @@ private:
       delete node;
       count--;
     }
+  }
+  // 在以node为根的二叉搜索树中，返回最小键值的节点
+  Node *minimum(Node *node)
+  {
+    if (node->left == NULL)
+      return node;
+    return minimum(node->left);
+  }
+
+  // 在以node为根的二叉搜索树中，返回最大键值的节点
+  Node *maximum(Node *node)
+  {
+    if (node->right == NULL)
+      return node;
+    return maximum(node->right);
+  }
+
+  // 删除掉以node为根的二分搜索树中的最小节点
+  // 返回删除节点后新的二分搜索树的根
+  Node *removeMin(Node *node)
+  {
+    if (node->left == NULL)
+    {
+      Node *rightNode = node->right;
+      delete Node;
+      count--;
+      return rightNode;
+    }
+    node->left = removeMin(node->left);
+    return node;
+  }
+  // 删除掉以node为根的二分搜索树中的最大节点
+  // 返回删除节点后新的二分搜索树的根
+  Node *removeMax(Node *node)
+  {
+    if(node->right == NULL)
+    {
+      Node *leftNode = node->left;
+      delete Node;
+      count--;
+      return leftNode;
+    }
+    node->right = removeMax(node->right);
+    return node;
   }
 };
 
