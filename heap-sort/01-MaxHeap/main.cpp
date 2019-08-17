@@ -19,6 +19,7 @@ private:
   int count;
 
 public:
+  // 构造函数, 构造一个空堆, 可容纳capacity个元素
   MaxHeap(int capacity)
   {
     data = new Item[capacity + 1];
@@ -29,10 +30,12 @@ public:
   {
     delete[] data;
   }
+  // 返回堆中的元素个数
   int size()
   {
     return count;
   }
+  // 返回一个布尔值, 表示堆中是否为空
   bool isEmpty()
   {
     return count == 0;
