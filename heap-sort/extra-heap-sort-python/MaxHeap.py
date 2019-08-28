@@ -7,7 +7,7 @@ import random
 
 class MaxHeap:
 
-    def __init__(self, data, capacity=10):
+    def __init__(self, data=None, capacity=10):
         if not data:
             self._data = [None] * (capacity + 1)
             self._count = 0
