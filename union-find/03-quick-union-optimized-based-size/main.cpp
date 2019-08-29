@@ -13,9 +13,10 @@ namespace UF3{
     UnionFind(int count){
       parent = new int[count];
       this->count = count;
-      for(int i = 0; i < count; i++)
+      for(int i = 0; i < count; i++){
         parent[i] = i;
         sz[i] = 1;
+      }
     }
     ~UnionFind(){
       delete [] parent;
