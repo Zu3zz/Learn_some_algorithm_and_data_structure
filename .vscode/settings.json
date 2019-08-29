@@ -1,4 +1,7 @@
 {
   "python.linting.pylintEnabled": true,
-  "python.pythonPath": "/Users/3zz/anaconda3/bin/python"
+  "python.pythonPath": "/Users/3zz/anaconda3/bin/python",
+  "files.associations": {
+    "vector": "cpp"
+  }
 }
