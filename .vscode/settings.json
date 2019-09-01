@@ -2,6 +2,7 @@
   "python.linting.pylintEnabled": true,
   "python.pythonPath": "/Users/3zz/anaconda3/bin/python",
   "files.associations": {
-    "vector": "cpp"
+    "vector": "cpp",
+    "ostream": "cpp"
   }
 }
